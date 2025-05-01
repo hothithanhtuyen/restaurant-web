@@ -1,0 +1,34 @@
+body {
+  font-size: 15px;
+  font-family: arial, tahoma;
+}
+.main {
+  background-color: darkgrey;
+  display: flex;
+  align-items: center;
+  margin: 10px 5px;
+  width: 100%;
+  height: 500px;
+}
+.home {
+  color: #fff;
+  border: 2px solid black;
+  background-color: black;
+  font-size: 12px;
+  width: 10%;
+  text-align: center;
+}
+.home a {
+  text-decoration: none;
+}
+.menu-link {
+  color: #fff;
+}
+.name {
+  color: #fff;
+  border: 2px solid black;
+  background-color: black;
+  font-size: 12px;
+  width: 10%;
+  text-align: center;
+}
