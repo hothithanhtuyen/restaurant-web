@@ -2,20 +2,32 @@ body {
   font-size: 15px;
   font-family: arial, tahoma;
 }
-.main {
-  background-color: darkgrey;
+.banner {
+  position: relative;
+  background-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
   display: flex;
   align-items: center;
   margin: 10px 5px;
   width: 100%;
-  height: 500px;
+  height: 300px;
+}
+.breadcrumb {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 10%;
 }
 .home {
   color: #fff;
   border: 2px solid black;
   background-color: black;
   font-size: 12px;
-  width: 10%;
+  width: max-content;
   text-align: center;
 }
 .home a {
@@ -24,11 +36,75 @@ body {
 .menu-link {
   color: #fff;
 }
-.name {
+.breadcrumb-menu {
   color: #fff;
   border: 2px solid black;
   background-color: black;
   font-size: 12px;
-  width: 10%;
+  width: max-content;
   text-align: center;
+}
+
+.breadcrumb-menu::before {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-left: 6px solid #ffcc00;
+  margin: 0 5px;
+  vertical-align: middle;
+}
+.title {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  color: #000000;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  font-size: 24px;
+  line-height: 26px;
+  white-space: nowrap;
+  font-weight: 700;
+}
+.content-wrap {
+  display: flex;
+  padding: 20px;
+}
+.left-content {
+  padding-left: 30px;
+  padding-right: 20px;
+  width: 50%;
+  height: 780px;
+}
+.left-content img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.item {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+.name {
+  display: flex;
+  margin-bottom: 15px;
+  font-size: 15px;
+  margin: 20px 20px;
+}
+.item-name {
+  white-space: nowrap;
+  font-weight: 700;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  color: #333333;
+  font-size: 16px;
+}
+.dot-leader {
+  flex-grow: 1;
+  border-bottom: 2px dotted #33333379;
+  position: relative;
+  top: -2px; /* Điều chỉnh vị trí dấu chấm */
+  margin: 0 5px;
 }
