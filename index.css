@@ -213,3 +213,23 @@ body {
 .check3 a {
   text-decoration: none;
 }
+.discover {
+  padding-top: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.lau {
+  width: 600px;
+  height: 600px;
+  background-image: url("https://nhahangruavang.com/wp-content/uploads/2022/04/lau-ca-mien-tay-ngang-min-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.information {
+  padding-left: 50px;
+  font-size: 15px;
+  font-weight: 70;
+  width: 540px;
+}
